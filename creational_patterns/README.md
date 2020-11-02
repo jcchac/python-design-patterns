@@ -27,4 +27,3 @@ The Singleton pattern lets ensure that a class has only a single instance, while
 :x: Requires special treatment in multithreaded environments, so that multiple threads don't create a singleton object several times.
 
 :x: Its difficult to unit test the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the Singleton class is private and overriding static methods is impossible in most languages, a creative way to mock the singleton will be required.
-
