@@ -1,10 +1,10 @@
-# Design Patterns in Python :snake:
+# Design patterns in Python :snake:
 
 This repository provides a collection of design patterns implemented in Python.
 
-###  Creational Patterns
+###  Creational patterns
 
-Deal with object creation mechanisms, creating objects in a manner suitable to the situation.
+Suitable to deal with object creation mechanisms, creating objects in a proper manner according to the situation.
 
 | Pattern        | Description                                                         |
 | -------------- | ------------------------------------------------------------------- |
