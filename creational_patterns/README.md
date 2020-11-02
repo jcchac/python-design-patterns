@@ -12,18 +12,10 @@ The Singleton pattern lets ensure that a class has only a single instance, while
 
 ### :balance_scale: Pros and Cons
 
-:heavy_check_mark: Ensures that a class has only a single instance.
-
-:heavy_check_mark: A global access point to that instance is provided.
-
-:heavy_check_mark: The singleton object is initialized only when it's requested for the first time.
-
-:x: Violates the Single Responsability Principle (SRP), as it solves two problems at a time.
-
-:x: Can mask bad design, for example when some components know too much about others.
-
-:x: Breaks modularity of code and its considered an antipattern by many developers, so its usage is on the decline in Python code.
-
-:x: Requires special treatment in multithreaded environments, so that multiple threads don't create a singleton object several times.
-
-:x: Its difficult to unit test the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the Singleton class is private and overriding static methods is impossible in most languages, a creative way to mock the singleton will be required.
+| | Pros | | Cons |
+|-| ---- |-| ---- |
+|:heavy_check_mark:| Ensures that a class has only a single instance. |:x:| Violates the Single Responsability Principle (SRP), as it solves two problems at a time. |
+|:heavy_check_mark:| A global access point to that instance is provided. |:x:| Can mask bad design, for example when some components know too much about others. |
+|:heavy_check_mark:| The singleton object is initialized only when it's requested for the first time. |:x:| Breaks modularity of code and its considered an antipattern by many developers, so its usage is on the decline in Python code. |
+| | |:x:| Requires special treatment in multithreaded environments, so that multiple threads don't create a singleton object several times. |
+| | |:x:| Its difficult to unit test the client code of the Singleton because many test frameworks rely on inheritance when producing mock objects. Since the constructor of the Singleton class is private and overriding static methods is impossible in most languages, a creative way to mock the singleton will be required. |
